@@ -89,7 +89,7 @@ export default function Portfolio() {
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(img/bg.jpg)',
+            backgroundImage: 'url(bg.jpg)',
           }}
         >
           <div 
@@ -219,7 +219,7 @@ export default function Portfolio() {
             <div className={`rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 ${darkMode ? 'bg-gray-700' : 'bg-gray-100'}`}>
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img 
-                  src="img/project1.jpg" 
+                  src="project1.jpg" 
                   alt="Digital Invitation Preview"
                   className="w-full h-full object-cover"
                 />
@@ -244,7 +244,7 @@ export default function Portfolio() {
             <div className={`rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 ${darkMode ? 'bg-gray-700' : 'bg-gray-100'}`}>
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img 
-                  src="img/project2.png" 
+                  src="project2.png" 
                   alt="Financial Record Preview"
                   className="w-full h-full object-cover"
                 />
