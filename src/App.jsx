@@ -61,20 +61,22 @@ export default function Portfolio() {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className={`md:hidden ${darkMode ? 'bg-gray-800' : 'bg-white'} shadow-lg`}>
-            <div className="px-4 py-4 space-y-3">
-              <button onClick={() => scrollToSection('home')} className="block w-full text-left py-2 hover:opacity-70 transition-opacity">Home</button>
-              <button onClick={() => scrollToSection('about')} className="block w-full text-left py-2 hover:opacity-70 transition-opacity">About</button>
-              <button onClick={() => scrollToSection('services')} className="block w-full text-left py-2 hover:opacity-70 transition-opacity">Services</button>
-              <button onClick={() => scrollToSection('portfolio')} className="block w-full text-left py-2 hover:opacity-70 transition-opacity">Portfolio</button>
-              <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 hover:opacity-70 transition-opacity">Contact</button>
-              <a 
-                href="https://skuyykek69.github.io/jasa/" 
-                className="block w-full text-left py-2 hover:opacity-70 transition-opacity"
-                style={{ color: '#1a8f89' }}
-              >
-                Order Web
-              </a>
+          <div className="md:hidden absolute right-4 top-16 z-50">
+            <div className={`${darkMode ? 'bg-gray-800' : 'bg-white'} shadow-lg rounded-lg overflow-hidden`}>
+              <div className="px-6 py-3 space-y-2">
+                <button onClick={() => scrollToSection('home')} className="block text-left py-2 hover:opacity-70 transition-opacity whitespace-nowrap">Home</button>
+                <button onClick={() => scrollToSection('about')} className="block text-left py-2 hover:opacity-70 transition-opacity whitespace-nowrap">About</button>
+                <button onClick={() => scrollToSection('services')} className="block text-left py-2 hover:opacity-70 transition-opacity whitespace-nowrap">Services</button>
+                <button onClick={() => scrollToSection('portfolio')} className="block text-left py-2 hover:opacity-70 transition-opacity whitespace-nowrap">Portfolio</button>
+                <button onClick={() => scrollToSection('contact')} className="block text-left py-2 hover:opacity-70 transition-opacity whitespace-nowrap">Contact</button>
+                <a 
+                  href="https://skuyykek69.github.io/jasa/" 
+                  className="block text-left py-2 hover:opacity-70 transition-opacity whitespace-nowrap"
+                  style={{ color: '#1a8f89' }}
+                >
+                  Order Web
+                </a>
+              </div>
             </div>
           </div>
         )}
@@ -129,7 +131,7 @@ export default function Portfolio() {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">About Me</h2>
           <div className="space-y-6 text-lg leading-relaxed">
             <p>
-              Saya adalah seorang profesional lintas industri yang berdedikasi dengan rekam jejak yang luas dalam bidang teknis, operasional, hingga layanan pelanggan. Saya tidak sekedar bekerja, saya belajar dan beradaptasi.
+              Saya adalah seorang pekerja lintas industri yang berdedikasi dengan rekam jejak yang luas dalam bidang teknis, operasional, hingga layanan pelanggan. Saya tidak sekedar bekerja, saya belajar dan beradaptasi.
             </p>
             <p>
               Dengan pengalaman mulai dari ketelitian teknis di industri manufaktur kayu dan mekanik, hingga solusi digital sebagai praktisi IT freelance, saya memiliki kemampuan unik untuk memahami masalah dari berbagai sudut pandang.
@@ -152,8 +154,8 @@ export default function Portfolio() {
             <div className={`p-6 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-gray-100'}`}>
               <h3 className="text-xl font-semibold mb-3" style={{ color: '#1a8f89' }}>Professional Experience</h3>
               <ul className="space-y-2">
-                <li>• Operator Mesin</li>
-                <li>• Mekanik Teralis</li>
+                <li>• Operator</li>
+                <li>• Mekanik</li>
                 <li>• Car Detailing Specialist</li>
                 <li>• Retail & Pharmacy</li>
               </ul>
@@ -265,6 +267,31 @@ export default function Portfolio() {
                 </a>
               </div>
             </div>
+
+            <div className={`rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 ${darkMode ? 'bg-gray-700' : 'bg-gray-100'}`}>
+              <div className="h-64 overflow-hidden bg-gray-200">
+                <img 
+                  src="project3.jpg" 
+                  alt="Feedback Bot Preview"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3">Feedback Bot</h3>
+                <p className={`mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                  Bot Telegram interaktif untuk mengelola feedback dan komunikasi dengan klien. Memudahkan pengumpulan masukan dan saran secara otomatis dan terstruktur.
+                </p>
+                <a 
+                  href="https://t.me/KEKprojects_bot" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-semibold hover:opacity-70 transition-opacity"
+                  style={{ color: '#1a8f89' }}
+                >
+                  View Project <ExternalLink size={16} />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -322,7 +349,7 @@ export default function Portfolio() {
       <footer className={`py-8 px-4 ${darkMode ? 'bg-gray-900 border-t border-gray-800' : 'bg-white border-t border-gray-200'}`}>
         <div className="max-w-6xl mx-auto text-center">
           <p className={darkMode ? 'text-gray-400' : 'text-gray-600'}>
-            ©️ 2026 𝙆𝙀𝙆 𝕏 𝙋𝙧𝙤𝙟𝙚𝙘𝙩𝙨. All rights reserved.
+            © 2026 𝙆𝙀𝙆 𝕏 𝙋𝙧𝙤𝙟𝙚𝙘𝙩𝙨. All rights reserved.
           </p>
         </div>
       </footer>
